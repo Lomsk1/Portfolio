@@ -1,0 +1,28 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300;500;800&display=swap");
+
+@mixin fontBold {
+  font: {
+    family: "Stick No Bills", sans-serif;
+    weight: 800;
+  }
+}
+
+@mixin fontNormal {
+  font: {
+    family: "Stick No Bills", sans-serif;
+    weight: 500;
+  }
+}
+
+@mixin fontThin {
+  font: {
+    family: "Stick No Bills", sans-serif;
+    weight: 300;
+  }
+}
