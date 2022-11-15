@@ -89,6 +89,7 @@
         align-items: center;
       }
       h2 {
+        margin-left: 20px !important;
         margin: 0;
         @include fontTitle;
         font-size: 2.5rem;
@@ -97,6 +98,7 @@
         color: white;
       }
       p {
+        margin-left: 20px !important;
         margin: 0;
         @include fontOpenSans;
         font-size: 1.3rem;
@@ -105,6 +107,7 @@
         color: #9b9b9b;  
       }
       button {
+        margin-left: 20px !important;
         width: 150px;
         height: 40px;
         background: none;
