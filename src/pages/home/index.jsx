@@ -1,57 +1,33 @@
-import { Fragment, Suspense, useState } from "react";
+import { Fragment, Suspense, useEffect, useState } from "react";
 
 import { Canvas } from "@react-three/fiber";
 import HomeCanvas from "../../components/homeCanvas";
+import SiteLoader from "../../hooks/loader";
 
 function Home() {
-  const [letterClass, setLetterClass] = useState("text-animate");
+  const [loading, setLoading] = useState(false);
 
-  const helloArray = ["H", "I", ",", "I'", "m"];
-  const nameArray = ["G", "I", "O", "R", "G", "I"];
-  const jobArray = [
-    "W",
-    "E",
-    "B",
-    " ",
-    " ",
-    " ",
-    "D",
-    "E",
-    "V",
-    "E",
-    "L",
-    "O",
-    "P",
-    "E",
-    "R",
-    ".",
-  ];
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
 
   return (
     <Fragment>
-      <section className="home_section-1">
-        {/* <div className="hello-div">
-          <div>
-            {helloArray &&
-              helloArray.map((l, index) => <h1 key={index}>{l}</h1>)}
-          </div>
-          <br />
-          <div>
-            {nameArray && nameArray.map((l, index) => <h1 key={index}>{l}</h1>)}
-          </div>
-          <br />
-          <div>
-            {jobArray && jobArray.map((l, index) => <h1 key={index}>{l}</h1>)}
-          </div>
-        </div> */}
-
-        {/* Canvas */}
-        <Suspense fallback={<div>Loading...</div>}>
-          <Canvas className=".canvas-home" shadows>
-            <HomeCanvas />
-          </Canvas>
-        </Suspense>
-      </section>
+      {loading ? (
+        <SiteLoader />
+      ) : (
+        <section className="home_section-1">
+          {/* Canvas */}
+          <Suspense fallback={<div>Loading...</div>}>
+            <Canvas className=".canvas-home" shadows>
+              <HomeCanvas />
+            </Canvas>
+          </Suspense>
+        </section>
+      )}
     </Fragment>
   );
 }

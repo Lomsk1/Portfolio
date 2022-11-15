@@ -1,0 +1,50 @@
+{
+    "imageURLs": [
+        {
+            "id": 1,
+            "title": "Routine",
+            "url": "https://wallpaperaccess.com/full/1111946.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Caffein",
+            "url": "https://wallpaperaccess.com/full/383185.png"
+        },
+        {
+            "id": 3,
+            "title": "Just a code",
+            "url": "https://wallpaperaccess.com/full/796839.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Routine VAL2",
+            "url": "https://wallpaperaccess.com/full/383183.png"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "test1 title",
+            "description": "test - 1 - description",
+            "thumbnail": "https://wallpaperaccess.com/full/5675708.png"
+        },
+        {
+            "id": 2,
+            "title": "test1 title",
+            "description": "test - 2 - description",
+            "thumbnail": "https://wallpaperaccess.com/full/383183.png"
+        },
+        {
+            "id": 3,
+            "title": "test1 title",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus culpa eos sequi. Ipsum harum tenetur obcaecati eum consequuntur ipsam! Debitis possimus quibusdam nostrum dolore iusto repellendus praesentium. Magnam, iure? Sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus culpa eos sequi. Ipsum harum tenetur obcaecati eum consequuntur ipsam! Debitis possimus quibusdam nostrum dolore iusto repellendus praesentium. Magnam, iure? Sequi.",
+            "thumbnail": "https://wallpaperaccess.com/full/2196475.jpg"
+        },
+        {
+            "id": 4,
+            "title": "test1 - 4  title",
+            "description": "test - 4 - description",
+            "thumbnail": "https://wallpaperaccess.com/full/5675708.png"
+        }
+    ]
+}

@@ -5,6 +5,8 @@
   flex-direction: $direction;
 }
 @import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
 
 @mixin fontBold {
   font: {
@@ -26,3 +28,39 @@
     weight: 300;
   }
 }
+
+@mixin fontOpenSans {
+  font: {
+    family: "Open Sans", sans-serif;
+    weight: 400;
+  }
+}
+@mixin fontTitle{
+  font: {
+    family: 'Domine', serif;
+    weight: 700;
+  }
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #131313;
+
+    // background-image: url("https://momentslikethis.de/wp-content/uploads/2013/01/shl.png");
+  // background-position: center top;
+  // background-size: auto;
+  // background-repeat: repeat;
+  // background-attachment: fixed;
+
+}
+
+
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+@import "react-slideshow-image/dist/styles.css";

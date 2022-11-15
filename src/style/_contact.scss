@@ -1,0 +1,443 @@
+.contact_section {
+  width: 100%;
+  min-height: 120vh;
+  height: max-content;
+  @include flexCenter(column);
+
+  .contact_title {
+    width: 80%;
+    height: 5rem;
+    @include flexCenter(row);
+    @include fontBold;
+    font-size: 3rem;
+    margin-top: 2em;
+    color: #292929;
+    @media (max-width: 600px) {
+        margin-top: 5em;
+      }
+  }
+  .contact_interface {
+    margin-top: 5em;
+    margin-bottom: 2em;
+    width: 80%;
+    height: 35rem;
+    @include flexCenter(row);
+    background-color: #292929;
+    border-radius: 15px;
+    // background-image: url("https://momentslikethis.de/wp-content/uploads/2013/01/shl.png");
+    // background-position: center top;
+    // background-size: auto;
+    // background-repeat: repeat;
+    // background-attachment: fixed;
+    // border: 1px dotted white;
+    hr {
+      height: 80%;
+      @media (max-width: 920px) {
+        width: 80%;
+      }
+      @media (max-width: 400px) {
+        height: max-content;
+      }
+    }
+
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+      height: max-content;
+    }
+    @media (max-width: 420px) {
+      width: 100%;
+    }
+    .left {
+      width: 49%;
+      height: 100%;
+      @include flexCenter(column);
+      @media (max-width: 920px) {
+        width: 100%;
+        height: 35rem;
+      }
+      @media (max-width: 400px) {
+        height: max-content;
+      }
+
+      .txt {
+        width: 90%;
+        height: 25%;
+        @include fontOpenSans;
+        color: #9b9b9b;
+        text-align: center;
+        @media (max-width: 400px) {
+          height: max-content;
+        }
+      }
+      .forms {
+        width: 90%;
+        height: 75%;
+        form {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .form__group {
+            position: relative;
+            padding: 10px 0 0;
+            margin-top: 10px;
+            width: 70%;
+            @media (max-width: 600px) {
+              width: 90%;
+            }
+          }
+
+          .form__field {
+            font-family: inherit;
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid #9b9b9b;
+            outline: 0;
+            font-size: 1.3rem;
+            color: #fff;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+            @media (max-width: 370px) {
+              font-size: 1.1rem;
+            }
+
+            &::placeholder {
+              color: transparent;
+            }
+
+            &:placeholder-shown ~ .form__label {
+              font-size: 1.3rem;
+              cursor: text;
+              top: 20px;
+              @media (max-width: 370px) {
+                font-size: 1.1rem;
+              }
+            }
+          }
+
+          .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 1rem;
+            color: #9b9b9b;
+          }
+
+          .form__field:focus {
+            ~ .form__label {
+              position: absolute;
+              top: 0;
+              display: block;
+              transition: 0.2s;
+              font-size: 1rem;
+              color: #11998e;
+              font-weight: 700;
+            }
+            padding-bottom: 6px;
+            font-weight: 700;
+            border-width: 3px;
+            border-image: linear-gradient(to right, #11998e, #38ef7d);
+            border-image-slice: 1;
+          }
+          /* reset input */
+          .form__field {
+            &:required,
+            &:invalid {
+              box-shadow: none;
+            }
+          }
+
+          textarea {
+            width: 66.5%;
+            height: 100px;
+            resize: none;
+            margin-top: 15px;
+            outline: none;
+            border: 1px solid #888;
+            border-radius: 15px;
+            padding: 10px;
+            @include fontOpenSans;
+            font-size: 1.1rem;
+            background-color: black;
+            color: white;
+            @media (max-width: 600px) {
+              width: 90%;
+            }
+          }
+          button {
+            width: 200px;
+            height: 50px;
+            text-decoration: none;
+            border: 1px solid rgb(146, 148, 248);
+            position: relative;
+            overflow: hidden;
+            background: none;
+            margin-top: 2em;
+            align-self: center;
+            color: #9b9b9b;
+            @media (max-width: 1200px) {
+              width: 150px;
+            }
+            @media (max-width: 600px) {
+              width: 250px;
+            }
+            @media (max-width: 400px) {
+              margin-bottom: 20px;
+            }
+            @media (max-width: 370px) {
+              width: 200px;
+            }
+
+            &:hover {
+              box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+            }
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(146, 148, 248, 0.4),
+                transparent
+              );
+              transition: all 650ms;
+            }
+
+            &:hover:before {
+              left: 100%;
+            }
+          }
+          .status{
+            margin: 0 auto;
+            padding: 1em;
+          }
+        }
+      }
+    }
+    .right {
+      width: 49%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (max-width: 920px) {
+        width: 100%;
+        height: 35rem;
+      }
+
+      .contact_title_txt {
+        width: 90%;
+        height: 5rem;
+        text-align: center;
+        h2 {
+          @include fontOpenSans;
+          font-size: 1.5rem;
+          color: #9b9b9b;
+        }
+      }
+      .address {
+        width: 90%;
+        min-height: 5rem;
+        height: max-content;
+        margin-top: 2em;
+        display: flex;
+        .address_icon {
+          width: 30px;
+          height: 30px;
+          svg {
+            width: 80%;
+            height: 80%;
+          }
+        }
+        .address_info {
+          width: 200px;
+          height: max-content;
+          @include fontOpenSans;
+          font-size: 1.1rem;
+          margin-left: 1em;
+          color: #9b9b9b;
+        }
+      }
+      .mail {
+        width: 90%;
+        min-height: 5rem;
+        margin-top: 2em;
+        display: flex;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+        a {
+          height: fit-content;
+          margin-left: 1em;
+          text-decoration: none;
+          color: black;
+          @include fontOpenSans;
+          color: #9b9b9b;
+        }
+      }
+      .map_container {
+        width: 90%;
+        height: 10rem;
+        background-color: red;
+        margin-top: 2em;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.loader_section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #030303;
+  svg {
+    display: none;
+  }
+  
+  $bolb-color: #0b0986;
+  
+  // Loader
+  .blobs {
+    filter: url(#goo);
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 70px;
+    transform-style: preserve-3d;
+    
+    // Blob center item
+    .blob-center {
+      transform-style: preserve-3d;
+      position: absolute;
+      background: $bolb-color;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      transform-origin: left top;
+      transform: scale(.9) translate(-50%, -50%);
+      animation: blob-grow
+        linear
+        3.4s
+        infinite;
+      border-radius: 50%;
+      box-shadow: 0 -10px 40px -5px $bolb-color;
+    }
+  }
+  
+  // Blob item
+  .blob {
+    position: absolute;
+    background: $bolb-color;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: blobs
+      ease-out
+      3.4s
+      infinite;
+    transform: scale(.9) translate(-50%, -50%);
+    transform-origin: center top;
+    opacity: 0;
+    
+    // Set animation delay for each of type
+    @for $i from 1 to 6 {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * 0.2 + s;
+      }
+    }
+  }
+  
+  // Keyframes variables
+  $left: calc(-330px - 50%);
+  $right: calc(330px - 50%);
+  
+  // Keyframes
+  @keyframes blobs {
+    0% {
+      opacity: 0;
+      transform: scale(0) translate($left, -50%);
+    }
+    1% {
+      opacity: 1;
+    }
+    35%,65% {
+      opacity: 1;
+      transform: scale(.9) translate(-50%, -50%);
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0) translate($right, -50%);
+    }
+  }
+  
+  @keyframes blob-grow {
+    0%,  39% {
+      transform: scale(0) translate(-50%, -50%);
+    }
+    40%, 42% {
+      transform: scale(1, .9) translate(-50%, -50%);
+    }
+    43%, 44% {
+      transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    45%, 46% {
+      transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    47%, 48% {
+      transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    52%{
+      transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    54% {
+      transform: scale(1.7, 1.6) translate(-50%, -50%);
+    }
+    58% {
+      transform: scale(1.8, 1.7) translate(-50%, -50%);
+    }
+    68%, 70% {
+      transform: scale(1.7, 1.5) translate(-50%, -50%);
+    }
+    78% {
+      transform: scale(1.6, 1.4) translate(-50%, -50%);
+    }
+    80%, 81% {
+      transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    82%, 83% {
+      transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    84%, 85% {
+      transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    86%, 87% {
+      transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    90%, 91% {
+      transform: scale(1, .9) translate(-50%, -50%);
+    }
+    92%, 100% {
+      transform: scale(0) translate(-50%, -50%);
+    }
+  }
+}
