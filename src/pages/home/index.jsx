@@ -3,6 +3,7 @@ import { Fragment, Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import HomeCanvas from "../../components/homeCanvas";
 import SiteLoader from "../../hooks/loader";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -21,11 +22,12 @@ function Home() {
       ) : (
         <section className="home_section-1">
           {/* Canvas */}
-          <Suspense fallback={<div>Loading...</div>}>
+          {/* <Suspense fallback={<div>Loading...</div>}>
             <Canvas className=".canvas-home" shadows>
               <HomeCanvas />
             </Canvas>
-          </Suspense>
+          </Suspense> */}
+          <Link to={'/normal_page'} > Click me</Link>
         </section>
       )}
     </Fragment>
