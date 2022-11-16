@@ -3,11 +3,10 @@ import {
   MeshReflectorMaterial,
   OrbitControls,
   PerspectiveCamera,
-  Reflector,
   useTexture,
 } from "@react-three/drei";
 import { useFrame, extend, useLoader } from "@react-three/fiber";
-import { Fragment, useEffect, useMemo, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import { angleToRadians } from "../../utils/angle";
 import * as THREE from "three";
 import { GirlWithComputer } from "../../pages/home/models/girl_in_computer";
@@ -18,8 +17,7 @@ import { AlarmButton } from "../../pages/home/models/alarm";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { useNavigate } from "react-router-dom";
 import { Light } from "../../../public/models/lamp/lapm";
-import { Material } from "three";
-import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader'
+
 
 extend({ TextGeometry });
 
@@ -30,14 +28,6 @@ function HomeCanvas() {
   gsap.registerPlugin(MotionPathPlugin);
 
   // Textures
-
-  // const grassTexture = useTexture({
-  //   map: "/public/textures/grass/Stylized_Dry_Mud_001_basecolor.jpg",
-  //   displacementMap: "/public/textures/grass/Stylized_Dry_Mud_001_height.png",
-  //   normalMap: "/public/textures/grass/Stylized_Dry_Mud_001_normal.jpg",
-  //   roughnessMap: "/public/textures/grass/Stylized_Dry_Mud_001_roughness.jpg",
-  //   aoMap: "/public/textures/grass/Stylized_Dry_Mud_001_ambientOcclusion.jpg",
-  // });
 
   const grassTexture = useTexture({
     map: "/public/textures/floor/Surface_Imperfections_Dirt_001_basecolor.jpg",

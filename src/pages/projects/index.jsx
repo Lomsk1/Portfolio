@@ -1,7 +1,6 @@
 import { faSmileWink } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef, useState } from "react";
 import { useEffect } from "react";
 import Footer from "../../components/footer";

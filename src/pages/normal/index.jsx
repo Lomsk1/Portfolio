@@ -19,11 +19,6 @@ import websites from "../../website.json";
 import { useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
-import SiteLoader from "../../hooks/loader";
 
 gsap.registerPlugin(ScrollTrigger, Observer, MotionPathPlugin);
 
@@ -146,17 +141,6 @@ function NormalPage() {
       });
       tlSkill.to(".skills_title", { xPercent: 100 });
       tlSkill.to(".skills_title", { yPercent: 350 });
-
-      // const tlWork = gsap.timeline({
-      //   scrollTrigger: {
-      //     trigger: ".works",
-      //     start: "top 90%",
-      //     end: "bottom 100px",
-      //     scrub: 1,
-      //   },
-      // });
-      // tlWork.to(".works", { xPercent: 100 });
-      // tlWork.to(".works", { yPercent: 350 });
     }, containerRef);
 
     return () => ctx.revert();
@@ -317,8 +301,6 @@ function NormalPage() {
             </section>
 
             <section className="section_normal-4">
-              {/* <div className="txt_img"></div> */}
-              {/* <div className="img"> */}
               {websites &&
                 websites.imageURLs.map((urls) => (
                   <div key={urls.id} className="image_container">
@@ -411,41 +393,6 @@ function NormalPage() {
                 </div>
               </div>
             </section>
-
-            {/* <section className="section_normal-6">
-          <div className="work_title_box">
-            <h2 className="works">My Works</h2>
-          </div>
-          <div className="work_features"> */}
-            {/* <Carousel 
-            autoPlay
-            showArrows
-            showStatus
-            showIndicators
-            showThumbs
-            infiniteLoop
-            useKeyboardArrows
-            stopOnHover
-            swipeable
-            // dynamicHeight
-            emulateTouch
-            className="carousel_main"
-            >
-              <div>
-                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" />
-                <p className="legend">Legend 1</p>
-              </div>
-              <div>
-                <img src="https://img5.goodfon.com/wallpaper/nbig/7/93/tree-sunset-flower-petals-fall-sun-star-nature-landscape-dig.jpg" />
-                <p className="legend">Legend 2</p>
-              </div>
-              <div>
-                <img src="https://w0.peakpx.com/wallpaper/182/495/HD-wallpaper-tree-of-life-colorful-tree-artist-artwork-digital-art-deviantart.jpg" />
-                <p className="legend">Legend 3</p>
-              </div>
-            </Carousel> */}
-            {/* </div>
-        </section> */}
           </div>
           <Footer />
         </>

@@ -2,7 +2,6 @@ import * as THREE from "three";
 import { Fragment, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, useGLTF, useTexture } from "@react-three/drei";
-import { EffectComposer, SSAO } from "@react-three/postprocessing";
 import {
   BallCollider,
   Physics,
@@ -32,7 +31,6 @@ function Buble({
   scale,
   r = THREE.MathUtils.randFloatSpread,
 }) {
-  const { nodes } = useGLTF("/public/models/sphere/model.glb");
   const api = useRef();
   useFrame((state, delta) => {
     delta = Math.min(0.1, delta);
@@ -107,10 +105,6 @@ function Pointer({ vec = new THREE.Vector3() }) {
 }
 
 function SphereAnimation() {
-  // const backgroundTexture = useTexture('/public/textures/bg-images/photo-1509718443690-d8e2fb3474b7.jpg')
-  // backgroundTexture.wrapS = THREE.RepeatWrapping
-  // backgroundTexture.wrapT = THREE.RepeatWrapping
-  // backgroundTexture.repeat.set(2, 2)
   return (
     <Fragment>
       <ambientLight intensity={1} />

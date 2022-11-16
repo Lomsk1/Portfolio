@@ -14,7 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useNavigate } from "react-router-dom";
-import { animateScroll, Link as LinkS } from "react-scroll";
+import { Link as LinkS } from "react-scroll";
 import logo from "../../assets/images/Capture-removebg-preview.png";
 
 function Header({ normal }) {
