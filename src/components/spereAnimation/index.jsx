@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { Fragment, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment, useGLTF, useTexture } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+import { Environment } from "@react-three/drei";
 import {
   BallCollider,
   Physics,

@@ -12,7 +12,7 @@ function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
   return (
@@ -20,15 +20,19 @@ function Home() {
       {loading ? (
         <SiteLoader />
       ) : (
-        <section className="home_section-1">
-          {/* Canvas */}
-          {/* <Suspense fallback={<div>Loading...</div>}>
-            <Canvas className=".canvas-home" shadows>
-              <HomeCanvas />
-            </Canvas>
-          </Suspense> */}
-          <Link to={'/normal_page'} > Click me</Link>
-        </section>
+        <>
+          <section className="home_section-1">
+            {/* Canvas */}
+            <Suspense fallback={<div>Loading...</div>}>
+              <Canvas className=".canvas-home" shadows>
+                <HomeCanvas />
+              </Canvas>
+            </Suspense>
+          </section>
+          <section className="home_section-2">
+            <Link to={"/normal_page"}> Click me</Link>
+          </section>
+        </>
       )}
     </Fragment>
   );
