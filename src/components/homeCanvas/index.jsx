@@ -19,24 +19,9 @@ import { useNavigate } from "react-router-dom";
 extend({ TextGeometry });
 
 function HomeCanvas() {
-  const navigate = useNavigate();
-
   // Plagins
   gsap.registerPlugin(MotionPathPlugin);
 
-  // Textures
-
-  // const grassTexture = useTexture({
-  //   map: "/public/textures/floor/Surface_Imperfections_Dirt_001_basecolor.jpg",
-  //   displacementMap:
-  //     "/public/textures/floor/Surface_Imperfections_Dirt_001_height.jpg",
-  //   normalMap:
-  //     "/public/textures/floor/Surface_Imperfections_Dirt_001_normal.jpg",
-  //   roughnessMap:
-  //     "/public/textures/floor/Surface_Imperfections_Dirt_001_roughness.jpg",
-  //   aoMap:
-  //     "/public/textures/floor/Surface_Imperfections_Dirt_001_ambientOcclusion.jpg",
-  // });
 
   const woodenTexture = useTexture({
     map: "/public/textures/wooden/Wood_027_basecolor.jpg",

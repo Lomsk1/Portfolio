@@ -1,16 +1,11 @@
 import {
-  faCentercode,
-  faCodepen,
   faDiscord,
   faFacebook,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCode,
-  faCodeBranch,
-  faCodeFork,
-  faShare,
+  faCode
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useNavigate } from "react-router-dom";
