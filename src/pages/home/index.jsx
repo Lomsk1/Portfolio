@@ -17,9 +17,9 @@ function Home() {
 
   return (
     <Fragment>
-      {loading ? (
+      {/* {loading ? (
         <SiteLoader />
-      ) : (
+      ) : ( */}
         <>
           <section className="home_section-1">
             {/* Canvas */}
@@ -29,11 +29,12 @@ function Home() {
               </Canvas>
             </Suspense>
           </section>
+
           <section className="home_section-2">
             <Link to={"/normal_page"}> Click me</Link>
           </section>
         </>
-      )}
+      {/* )} */}
     </Fragment>
   );
 }

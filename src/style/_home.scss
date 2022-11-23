@@ -1,39 +1,39 @@
 
 .home_section-1 {
-  width: 50%;
-  height: 50vh;
+  width: 100%;
+  height: 100vh;
   background-color: transparent;
   display: flex;
 
-  .hello-div {
-    width: 50%;
-    height: 100%;
-    background-color: brown;
-    @include flexCenter(column);
+  // .hello-div {
+  //   width: 50%;
+  //   height: 100%;
+  //   background-color: brown;
+  //   @include flexCenter(column);
 
-    div {
-      display: flex;
-      padding: 20px;
+  //   div {
+  //     display: flex;
+  //     padding: 20px;
 
-      h1 {
-        color: #fff;
-        font-size: 56px;
-        line-height: 53px;
-        margin: 0;
-        font-weight: 400;
-        padding: 5px;
-        &:hover {
-          animation: heartBeat;
-          animation-duration: 2s;
-          color: red;
-          transition: 700ms;
-        }
-      }
-    }
-  }
+  //     h1 {
+  //       color: #fff;
+  //       font-size: 56px;
+  //       line-height: 53px;
+  //       margin: 0;
+  //       font-weight: 400;
+  //       padding: 5px;
+  //       &:hover {
+  //         animation: heartBeat;
+  //         animation-duration: 2s;
+  //         color: red;
+  //         transition: 700ms;
+  //       }
+  //     }
+  //   // }
+  // }
   .canvas-home {
-    width: 50% !important;
-    height: 50%;
+    width: 100%;
+    height: 100vh;
     background-color: blue;
   }
 }
