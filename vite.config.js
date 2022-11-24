@@ -18,11 +18,12 @@ export default defineConfig({
         },
       },
     },
+    // rollupOptions: {
+    //   output: {
+    //     manualChunks: {
+    //       three: ["three"],
+    //     },
+    //   },
+    // },
   },
-  manualChunks: {
-    lodash: ["lodash"],
-  },
-  // build: {
-  //   chunkSizeWarningLimit: 3500,
-  // },
 });

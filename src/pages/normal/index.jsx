@@ -172,24 +172,6 @@ function NormalPage() {
     };
   }, []);
 
-  const slideImages = [
-    {
-      url: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-      caption: "Slide 1",
-      id: 1,
-    },
-    {
-      url: "ihttps://img5.goodfon.com/wallpaper/nbig/7/93/tree-sunset-flower-petals-fall-sun-star-nature-landscape-dig.jpg",
-      caption: "Slide 2",
-      id: 2,
-    },
-    {
-      url: "https://w0.peakpx.com/wallpaper/182/495/HD-wallpaper-tree-of-life-colorful-tree-artist-artwork-digital-art-deviantart.jpg",
-      caption: "Slide 3",
-      id: 3,
-    },
-  ];
-
   return (
     // <>
     //   {loading ? (
