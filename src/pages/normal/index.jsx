@@ -19,6 +19,7 @@ import websites from "../../website.json";
 import { useState } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import SiteLoader from "../../hooks/loader";
 
 gsap.registerPlugin(ScrollTrigger, Observer, MotionPathPlugin);
 
@@ -186,7 +187,7 @@ function NormalPage() {
                   Hello Stranger <br /> It's Okay, You Can <br /> Scroll Down
                 </h1>
               </div>
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<SiteLoader />}>
                 <Canvas
                   id="canvas_sphere_animation"
                   shadows

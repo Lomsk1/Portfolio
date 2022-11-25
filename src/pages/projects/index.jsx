@@ -11,13 +11,13 @@ import SiteLoader from "../../hooks/loader";
 
 function Projects() {
   const [loading, setLoading] = useState(false);
-  const [timeWait, setTimeWait] = useState(false)
+  const [timeWait, setTimeWait] = useState(false);
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setTimeWait(true)
+      setTimeWait(true);
     }, 2000);
   }, []);
 
@@ -39,48 +39,48 @@ function Projects() {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <SiteLoader />
       ) : (
-        <>
-          <Header />
-          <section className="project_section-1">
-            <div className="left">
-              <h1>Projects</h1>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Ducimus culpa eos sequi. Ipsum harum tenetur obcaecati eum
-                consequuntur ipsam! Debitis possimus quibusdam nostrum dolore
-                iusto repellendus praesentium. Magnam, iure? Sequi.
-              </p>
-            </div>
-            <div className="right">
-              <FontAwesomeIcon icon={faSmileWink} color="#CA111185" />
-            </div>
-          </section>
+        <> */}
+      <Header />
+      <section className="project_section-1">
+        <div className="left">
+          <h1>Projects</h1>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+            culpa eos sequi. Ipsum harum tenetur obcaecati eum consequuntur
+            ipsam! Debitis possimus quibusdam nostrum dolore iusto repellendus
+            praesentium. Magnam, iure? Sequi.
+          </p>
+        </div>
+        <div className="right">
+          <FontAwesomeIcon icon={faSmileWink} color="#CA111185" />
+        </div>
+      </section>
 
-          <div ref={containerRef}>
-            <section className="project_section-2">
-              {projects.projects
-                ? projects.projects.map((project) => (
-                    <div key={project.id} className="project_container">
-                      <div className="left">
-                        <h2>{project.title}</h2>
-                        <p>{project.description}</p>
-                        <button>View Project</button>
-                      </div>
-                      <div className="right">
-                        <ImageZoom src={project.thumbnail} alt="" />
-                      </div>
-                    </div>
-                  ))
-                : "Loading ..."}
-            </section>
-          </div>
-          <Footer />
-        </>
-      )}
+      <div ref={containerRef}>
+        <section className="project_section-2">
+          {projects.projects
+            ? projects.projects.map((project) => (
+                <div key={project.id} className="project_container">
+                  <div className="left">
+                    <h2>{project.title}</h2>
+                    <p>{project.description}</p>
+                    <button>View Project</button>
+                  </div>
+                  <div className="right">
+                    <ImageZoom src={project.thumbnail} alt="" />
+                  </div>
+                </div>
+              ))
+            : "Loading ..."}
+        </section>
+      </div>
+      <Footer />
+      {/* </>
+      )} */}
     </>
   );
 }
