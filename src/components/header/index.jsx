@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useNavigate } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import logo from "../../assets/images/Capture-removebg-preview.png";
+import syncImg from '../../assets/images/sync_FILL0_wght400_GRAD0_opsz48.png'
+import SyncImg from "../../assets/sync";
 
 function Header({ normal }) {
   const navigate = useNavigate();
@@ -83,7 +85,10 @@ function Header({ normal }) {
           </div>
         </ul>
 
-        <div className="logo"></div>
+        <div className="logo" title="Coming Soon">
+
+          <SyncImg />
+        </div>
       </nav>
     </header>
   );
