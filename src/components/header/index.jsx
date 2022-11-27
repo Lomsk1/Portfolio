@@ -4,9 +4,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCode
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, useNavigate } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
@@ -19,28 +17,28 @@ function Header({ normal }) {
     navigate("/contact");
   };
   const projectHandler = () => {
-    navigate('/projects')
-  }
+    navigate("/projects");
+  };
   return (
     <header>
       <nav>
         <div className="icon">
           {normal ? (
-             <LinkS
-             to="section_normal-1"
-             smooth={true}
-             >
-             <img src={logo} alt="" />
-           </LinkS>
+            <LinkS to="section_normal-1" smooth={true}>
+              <img src={logo} alt="" />
+            </LinkS>
           ) : (
-            <Link to={"/normal_page"}><img src={logo} alt="" /></Link>
-          
+            <Link to={"/normal_page"}>
+              <img src={logo} alt="" />
+            </Link>
           )}
         </div>
 
         <ul className="main_ul">
           <div className="div">
-            <li className="txt" onClick={projectHandler}>Projects</li>
+            <li className="txt" onClick={projectHandler}>
+              Projects
+            </li>
             <li className="txt" onClick={contactHandler}>
               Contact
             </li>
@@ -48,24 +46,30 @@ function Header({ normal }) {
           <div className="div s">
             <ul className="share-icons">
               <li className="share-icons__item">
-                <Link to={"/normal_page"}>
+                <Link to={""}>
                   <FontAwesomeIcon icon={faDiscord} color={"#5865F2"} />
                 </Link>
               </li>
               <li className="share-icons__item">
-                <Link to={""}>
+                <a href="https://www.instagram.com/giorgi_.l/" target="_blank">
                   <FontAwesomeIcon icon={faInstagram} color={"#D300C5"} />
-                </Link>
+                </a>
               </li>
               <li className="share-icons__item">
-                <Link to={""}>
+                <a
+                  href="https://www.facebook.com/giorgi.lomsianidze.9/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon icon={faFacebook} color={"#097EEB"} />
-                </Link>
+                </a>
               </li>
               <li className="share-icons__item">
-                <Link to={""}>
+                <a
+                  href="https://www.linkedin.com/in/giorgi-lomsianidze-bb2aba229/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon icon={faLinkedin} color={"#0A66C2"} />
-                </Link>
+                </a>
               </li>
               <li className="share-icons__block">
                 <div className="share-icons__block-left">

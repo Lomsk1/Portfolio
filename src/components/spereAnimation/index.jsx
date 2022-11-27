@@ -130,7 +130,8 @@ function SphereAnimation() {
           <meshBasicMaterial 
           // map={backgroundTexture} 
           // depthTest={false} 
-          color='#04012B'
+          // color='#04012B'
+          color='#000814'
           side={THREE.BackSide} />
         </mesh>
       </Environment>

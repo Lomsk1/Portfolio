@@ -43,10 +43,7 @@ function HomeCanvas() {
   });
 
   // Font Loader
-  const font = useLoader(
-    FontLoader,
-    "/models/fonts/Poor Story_Regular.json"
-  );
+  const font = useLoader(FontLoader, "/models/fonts/Poor Story_Regular.json");
 
   // Box Animation
 
@@ -151,19 +148,19 @@ function HomeCanvas() {
       {/* Cubes */}
 
       {/* front */}
-      <mesh position={[-1.5, 5, 1]} castShadow ref={boxOneRef} receiveShadow>
+      <mesh position={[-0.5, 5, 1]} castShadow ref={boxOneRef} receiveShadow>
         <boxGeometry args={[4, 1, 1]} />
         <meshStandardMaterial {...woodenTexture} displacementScale={0.3} />
       </mesh>
 
       {/* middle */}
-      <mesh position={[-1.5, 5, -0]} castShadow ref={boxTwoRef} receiveShadow>
+      <mesh position={[-0.5, 5, -0]} castShadow ref={boxTwoRef} receiveShadow>
         <boxGeometry args={[4, 1, 1]} />
         <meshStandardMaterial {...woodenTexture} displacementScale={0.3} />
       </mesh>
 
       {/* back */}
-      <mesh position={[-1.5, 5, -1]} castShadow ref={boxThreeRef} receiveShadow>
+      <mesh position={[-0.5, 5, -1]} castShadow ref={boxThreeRef} receiveShadow>
         <boxGeometry args={[4, 1, 1]} />
         <meshStandardMaterial {...woodenTexture} displacementScale={0.2} />
       </mesh>
@@ -172,7 +169,7 @@ function HomeCanvas() {
       <mesh
         receiveShadow
         castShadow
-        position={[-2.9, -5, 1.1]}
+        position={[-1.9, -5, 1.1]}
         ref={wordsOneRef}
       >
         <textGeometry
@@ -197,7 +194,7 @@ function HomeCanvas() {
       <mesh
         receiveShadow
         castShadow
-        position={[-2.15, -5, 0.3]}
+        position={[-1.15, -5, 0.3]}
         ref={wordsTwoRef}
       >
         <textGeometry
@@ -221,7 +218,7 @@ function HomeCanvas() {
       <mesh
         receiveShadow
         castShadow
-        position={[-2.15, -5, -1]}
+        position={[-1.15, -5, -1]}
         ref={wordsThreeRef}
       >
         <textGeometry
