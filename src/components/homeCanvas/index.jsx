@@ -21,11 +21,11 @@ function HomeCanvas() {
   gsap.registerPlugin(MotionPathPlugin);
 
   const woodenTexture = useTexture({
-    map: "/public/textures/wooden/Wood_027_basecolor.jpg",
-    displacementMap: "/public/textures/wooden/Wood_027_height.png",
-    normalMap: "/public/textures/wooden/Wood_027_normal.jpg",
-    roughnessMap: "/public/textures/wooden/Wood_027_roughness.jpg",
-    aoMap: "/public/textures/wooden/Wood_027_ambientOcclusion.jpg",
+    map: "/textures/wooden/Wood_027_basecolor.jpg",
+    displacementMap: "/textures/wooden/Wood_027_height.png",
+    normalMap: "/textures/wooden/Wood_027_normal.jpg",
+    roughnessMap: "/textures/wooden/Wood_027_roughness.jpg",
+    aoMap: "/textures/wooden/Wood_027_ambientOcclusion.jpg",
   });
 
   // Orbit Control
@@ -45,7 +45,7 @@ function HomeCanvas() {
   // Font Loader
   const font = useLoader(
     FontLoader,
-    "/public/models/fonts/Poor Story_Regular.json"
+    "/models/fonts/Poor Story_Regular.json"
   );
 
   // Box Animation

@@ -6,8 +6,9 @@ import { useEffect } from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import projects from "../../website.json";
-// import ImageZoom from "react-image-zooom";
 import SiteLoader from "../../hooks/loader";
+import transform from "gltfjsx/src/utils/transform";
+
 
 function Projects() {
   const [loading, setLoading] = useState(false);
@@ -71,7 +72,10 @@ function Projects() {
                     <button>View Project</button>
                   </div>
                   <div className="right">
-                    {/* <ImageZoom src={project.thumbnail} alt="" /> */}
+                    <img
+                      src={project.thumbnail}
+                      alt=""
+                    />
                   </div>
                 </div>
               ))
