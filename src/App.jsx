@@ -8,14 +8,14 @@ import Projects from "./pages/projects";
 import { useEffect } from "react";
 
 function App() {
-//   const { pathname } = useLocation();
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <Fragment>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<Home />} />
         <Route path="/normal_page" element={<NormalPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
