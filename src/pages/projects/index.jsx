@@ -1,4 +1,3 @@
-import { faSmileWink } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import gsap from "gsap";
 import { useRef, useState } from "react";
@@ -6,9 +5,7 @@ import { useEffect } from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import projects from "../../website.json";
-import SiteLoader from "../../hooks/loader";
-import transform from "gltfjsx/src/utils/transform";
-
+import { faQrcode } from "@fortawesome/free-solid-svg-icons";
 
 function Projects() {
   const [loading, setLoading] = useState(false);
@@ -57,7 +54,7 @@ function Projects() {
           </p>
         </div>
         <div className="right">
-          <FontAwesomeIcon icon={faSmileWink} color="#CA111185" />
+          <FontAwesomeIcon icon={faQrcode} color="#CA111185" />
         </div>
       </section>
 
@@ -72,10 +69,7 @@ function Projects() {
                     <button>View Project</button>
                   </div>
                   <div className="right">
-                    <img
-                      src={project.thumbnail}
-                      alt=""
-                    />
+                    <img src={project.thumbnail} alt="" />
                   </div>
                 </div>
               ))

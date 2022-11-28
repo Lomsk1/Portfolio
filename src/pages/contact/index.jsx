@@ -43,6 +43,7 @@ function Contact() {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
@@ -56,14 +57,11 @@ function Contact() {
           setStatusBad("FAILED. Please try again.");
         }
       );
+      reset()
   };
 
   return (
     <>
-      {/* {loading ? (
-        <SiteLoader />
-      ) : (
-        <> */}
       <Header />
       <section className="contact_section">
         <div className="contact_title">Get in Touch</div>
@@ -182,8 +180,6 @@ function Contact() {
         </div>
       </section>
       <Footer />
-      {/* </>
-      )} */}
     </>
   );
 }
