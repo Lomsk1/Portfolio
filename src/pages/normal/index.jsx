@@ -77,7 +77,7 @@ function NormalPage() {
           trigger: ".txt_one",
           start: "top 95%",
           end: "bottom 60%",
-          scrub: 1,
+          scrub: 2,
           toggleActions: "restart, pause reverse pause",
         },
       });
@@ -88,7 +88,7 @@ function NormalPage() {
           trigger: ".txt_two",
           start: "top 95%",
           end: "bottom 60%",
-          scrub: 1,
+          scrub: 2,
           toggleActions: "restart, pause reverse pause",
         },
       });
@@ -99,7 +99,7 @@ function NormalPage() {
           trigger: ".txt_three",
           start: "top 95%",
           end: "bottom 60%",
-          scrub: 1,
+          scrub: 2,
           toggleActions: "restart, pause reverse pause",
         },
       });
@@ -110,7 +110,7 @@ function NormalPage() {
           trigger: ".txt_four",
           start: "top 95%",
           end: "bottom 70%",
-          scrub: 1,
+          scrub: 2,
           toggleActions: "restart, pause reverse pause",
         },
       });
@@ -180,6 +180,7 @@ function NormalPage() {
     //   ) : (
         <>
           <Header normal />
+          <div className="minWidth"></div>
           <div ref={containerRef}>
             <section className="section_normal-1">
               <div className="hello_div">

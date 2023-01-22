@@ -29,6 +29,9 @@
         margin: 0;
         text-align: center;
         color: white;
+        @media (max-width: 400px) {
+          font-size: 1.3rem;
+        }
       }
       button {
         width: 100px;
@@ -46,11 +49,11 @@
 
         @media (max-width: 620px) {
           animation-duration: 0s;
+          transform: translateX(0px);
         }
       }
 
       @keyframes buttonAnimation {
-
         50% {
           transform: translateX(100px);
         }

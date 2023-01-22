@@ -46,30 +46,30 @@ function Footer() {
         <div className="right">
           <div className="button-block">
             <div className="social">
-              <Link to={""}>
+              <a href="https://www.facebook.com/giorgi.lomsianidze.9/" target="_blank">
                 <FontAwesomeIcon icon={faFacebook} color={"#097EEB"} />
-              </Link>
+              </a>
             </div>
           </div>
           <div className="button-block">
             <div className="social">
-              <Link to={""}>
+              <a href="https://www.instagram.com/giorgi_.l/" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} color={"#D300C5"} />
-              </Link>
+              </a>
             </div>
           </div>
           <div className="button-block">
             <div className="social">
-              <Link to={""}>
+              <a href="" target="_blank">
                 <FontAwesomeIcon icon={faDiscord} color={"#5865F2"} />
-              </Link>
+              </a>
             </div>
           </div>
           <div className="button-block">
             <div className="social">
-              <Link to={""}>
+              <a href="https://www.linkedin.com/in/giorgi-lomsianidze-bb2aba229/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} color={"#0A66C2"} />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

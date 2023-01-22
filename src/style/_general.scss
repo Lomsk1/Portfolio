@@ -3,12 +3,14 @@ header {
   height: 5rem;
   display: flex;
   overflow: hidden;
-  background-color: #13131370;
+  background-color: #131313cc;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -20px 36px -36px inset;
   position: fixed;
   z-index: 9999;
   @media (max-width: 600px) {
     height: 11rem;
+    position: sticky;
+    top: 0;
   }
 
   nav {
@@ -38,9 +40,19 @@ header {
     .logo {
       width: 100px;
       height: 100px;
-      background-color: rgb(77, 42, 42);
+      @include flexCenter(row);
       @media (max-width: 600px) {
         display: none;
+      }
+
+      svg {
+        cursor: not-allowed;
+        transition: all 700ms;
+
+        &:hover {
+          transform: rotate(360deg);
+          transition: 700ms;
+        }
       }
     }
     .main_ul {
@@ -67,7 +79,7 @@ header {
 
         .txt {
           cursor: pointer;
-          color: rgba(14, 168, 14, 0.5);
+          color: rgba(14, 168, 14, 0.856);
           transition: 700ms;
           &:hover {
             transform: scale(1.2);
@@ -178,7 +190,7 @@ footer {
       height: 17rem;
       justify-content: center;
       align-items: center;
-      .one{
+      .one {
         width: 80%;
       }
     }
@@ -204,10 +216,9 @@ footer {
         width: 100px;
         height: 100px;
         margin-left: 2em;
-        @media (max-width: 460px){
-            display: none;
+        @media (max-width: 460px) {
+          display: none;
         }
-    
       }
       .info {
         width: 50%;
@@ -224,14 +235,14 @@ footer {
           address {
             p {
               margin: 0;
-              color: #333333;
+              color: #4d4b4b;
               span {
                 color: #807f7f;
                 font-size: 1.2rem;
               }
               a {
                 text-decoration: dotted;
-                color: #333333;
+                color: #4d4b4b;
               }
             }
           }

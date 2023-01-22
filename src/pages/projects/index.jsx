@@ -1,4 +1,3 @@
-import { faSmileWink } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import gsap from "gsap";
 import { useRef, useState } from "react";
@@ -6,12 +5,13 @@ import { useEffect } from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import projects from "../../website.json";
-// import ImageZoom from "react-image-zooom";
-import SiteLoader from "../../hooks/loader";
+import { faQrcode } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const [loading, setLoading] = useState(false);
   const [timeWait, setTimeWait] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -56,7 +56,7 @@ function Projects() {
           </p>
         </div>
         <div className="right">
-          <FontAwesomeIcon icon={faSmileWink} color="#CA111185" />
+          <FontAwesomeIcon icon={faQrcode} color="#CA111185" />
         </div>
       </section>
 
@@ -68,10 +68,12 @@ function Projects() {
                   <div className="left">
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
-                    <button>View Project</button>
+                    <a href={project.url} target="_blank">
+                      View Project
+                    </a>
                   </div>
                   <div className="right">
-                    {/* <ImageZoom src={project.thumbnail} alt="" /> */}
+                    <img src={project.thumbnail} alt="" />
                   </div>
                 </div>
               ))

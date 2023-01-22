@@ -1,50 +1,40 @@
 {
-    "imageURLs": [
-        {
-            "id": 1,
-            "title": "Routine",
-            "url": "https://wallpaperaccess.com/full/1111946.jpg"
-        },
-        {
-            "id": 2,
-            "title": "Caffein",
-            "url": "https://wallpaperaccess.com/full/383185.png"
-        },
-        {
-            "id": 3,
-            "title": "Just a code",
-            "url": "https://wallpaperaccess.com/full/796839.jpg"
-        },
-        {
-            "id": 6,
-            "title": "Routine VAL2",
-            "url": "https://wallpaperaccess.com/full/383183.png"
-        }
-    ],
-    "projects": [
-        {
-            "id": 1,
-            "title": "test1 title",
-            "description": "test - 1 - description",
-            "thumbnail": "https://wallpaperaccess.com/full/5675708.png"
-        },
-        {
-            "id": 2,
-            "title": "test1 title",
-            "description": "test - 2 - description",
-            "thumbnail": "https://wallpaperaccess.com/full/383183.png"
-        },
-        {
-            "id": 3,
-            "title": "test1 title",
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus culpa eos sequi. Ipsum harum tenetur obcaecati eum consequuntur ipsam! Debitis possimus quibusdam nostrum dolore iusto repellendus praesentium. Magnam, iure? Sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus culpa eos sequi. Ipsum harum tenetur obcaecati eum consequuntur ipsam! Debitis possimus quibusdam nostrum dolore iusto repellendus praesentium. Magnam, iure? Sequi.",
-            "thumbnail": "https://wallpaperaccess.com/full/2196475.jpg"
-        },
-        {
-            "id": 4,
-            "title": "test1 - 4  title",
-            "description": "test - 4 - description",
-            "thumbnail": "https://wallpaperaccess.com/full/5675708.png"
-        }
-    ]
+  "imageURLs": [
+    {
+      "id": 1,
+      "title": "Routine",
+      "url": "https://wallpaperaccess.com/full/1111946.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Caffein",
+      "url": "https://wallpaperaccess.com/full/383185.png"
+    },
+    {
+      "id": 3,
+      "title": "Just a code",
+      "url": "https://wallpaperaccess.com/full/796839.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Routine VAL2",
+      "url": "https://wallpaperaccess.com/full/383183.png"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "eCommerce Full-Stack Project ",
+      "description": "Front - React, Back - Python/Django. This project contains: User registration/authorization; User profile and admin panel; Some kind of events, like news, hot deals; Carts and Wishlists;",
+      "thumbnail": "../src/assets/images/ecommerce.png",
+      "url": "https://lomskproject.in/"
+    },
+    {
+      "id": 2,
+      "title": "Kaukasus Travel",
+      "description": "Traveling Web App. This site will be added soon",
+      "thumbnail": "../src/assets/images/kaukasus.png",
+      "url": ""
+    }
+  ]
 }
