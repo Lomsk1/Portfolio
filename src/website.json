@@ -26,14 +26,14 @@
       "id": 1,
       "title": "eCommerce Full-Stack Project ",
       "description": "Front - React, Back - Python/Django. This project contains: User registration/authorization; User profile and admin panel; Some kind of events, like news, hot deals; Carts and Wishlists;",
-      "thumbnail": "../src/assets/images/ecommerce.png",
+      "thumbnail": "https://i.ibb.co/8MLLJq1/screencapture-lomskproject-in-each-products-Apple-i-Phone-14-Pro-Max-128-GB-Deep-Black-2-2023-01-22.png",
       "url": "https://lomskproject.in/"
     },
     {
       "id": 2,
       "title": "Kaukasus Travel",
       "description": "Traveling Web App. This site will be added soon",
-      "thumbnail": "../src/assets/images/kaukasus.png",
+      "thumbnail": "https://i.ibb.co/vXZ4vCF/screencapture-localhost-3000-2023-01-22-22-22-09.png",
       "url": ""
     }
   ]
