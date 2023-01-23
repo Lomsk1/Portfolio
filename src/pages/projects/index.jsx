@@ -9,18 +9,6 @@ import { faQrcode } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
-  const [loading, setLoading] = useState(false);
-  const [timeWait, setTimeWait] = useState(false);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setTimeWait(true);
-    }, 2000);
-  }, []);
-
   const containerRef = useRef(null);
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -35,7 +23,7 @@ function Projects() {
     }, containerRef);
 
     return () => ctx.revert();
-  }, [timeWait]);
+  }, []);
 
   return (
     <>
