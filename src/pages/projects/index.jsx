@@ -37,7 +37,7 @@ function Projects() {
           <hr />
           <p>
             In this page u can see my several Website projects, with demo
-            version. <br /> <br /> Please, Click on Gamepad on the right to see
+            version. <br /> <br /> Please, Click on the Gamepad on the right to see
             some little games which are made by Javascript.
           </p>
         </div>

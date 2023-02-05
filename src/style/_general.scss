@@ -8,6 +8,9 @@
   border-radius: 50%;
   opacity: 1;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 .cursor-dot {
   width: 8px;
