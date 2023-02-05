@@ -25,16 +25,43 @@
     {
       "id": 1,
       "title": "eCommerce Full-Stack Project ",
-      "description": "Front - React, Back - Python/Django. This project contains: User registration/authorization; User profile and admin panel; Some kind of events, like news, hot deals; Carts and Wishlists;",
+      "description": "Front - React, Back - Python/Django. This project contains: User registration/authorization; User profile and admin panel; Some kind of events, like news, hot deals; Carts and Wishlists; Responsive.",
       "thumbnail": "https://i.ibb.co/8MLLJq1/screencapture-lomskproject-in-each-products-Apple-i-Phone-14-Pro-Max-128-GB-Deep-Black-2-2023-01-22.png",
       "url": "https://lomskproject.in/"
     },
     {
       "id": 2,
+      "title": "Restaurant Web App",
+      "description": "Front - Next.js, TypeScript, Scss. Responsive. (Under the Construction)",
+      "thumbnail": "https://i.ibb.co/Cms4QBJ/Screenshot-2023-02-05-165024.png",
+      "url": "https://restaurant-v1.vercel.app/"
+    },
+    {
+      "id": 3,
       "title": "Kaukasus Travel",
       "description": "Traveling Web App. This site will be added soon",
       "thumbnail": "https://i.ibb.co/vXZ4vCF/screencapture-localhost-3000-2023-01-22-22-22-09.png",
       "url": ""
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "Rock-Paper-Scissor",
+      "thumbnail": "https://i.ibb.co/km0LQ4r/ss.png",
+      "url": "https://lomsk1.github.io/R-P-S/"
+    },
+    {
+      "id": 2,
+      "title": "Splitter",
+      "thumbnail": "https://i.ibb.co/cXS1CfW/Screenshot-2023-02-05-192319.png",
+      "url": "https://lomsk1.github.io/F-M-SPLITTER/"
+    },
+    {
+      "id": 3,
+      "title": "Guess Number",
+      "thumbnail": "https://i.ibb.co/5vxk7SQ/Screenshot-2023-02-05-192513.png",
+      "url": "https://lomsk1.github.io/Game_guessNumber/"
     }
   ]
 }

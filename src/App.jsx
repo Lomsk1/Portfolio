@@ -6,6 +6,7 @@ import NormalPage from "./pages/normal";
 import Contact from "./pages/contact";
 import Projects from "./pages/projects";
 import { useEffect } from "react";
+import Cursor from "./components/cursor";
 
 function App() {
   const { pathname } = useLocation();
@@ -14,6 +15,7 @@ function App() {
   }, [pathname]);
   return (
     <Fragment>
+      <Cursor />
       <Routes>
         <Route path="/*" element={<Home />} />
         <Route path="/normal_page" element={<NormalPage />} />
